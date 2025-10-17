@@ -57,6 +57,10 @@ function validatePlugin(pluginDir) {
     // Check for author
     if (!pluginJson.author) {
       warnings.push('Missing recommended field: author');
+    } else if (typeof pluginJson.author === 'string') {
+      errors.push('author must be an object with a "name" property, not a string');
+    } else if (typeof pluginJson.author === 'object' && !pluginJson.author.name) {
+      errors.push('author object must have a "name" property');
     }
 
   } catch (err) {

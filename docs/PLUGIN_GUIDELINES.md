@@ -31,7 +31,9 @@ The manifest must include these required fields:
   "name": "plugin-name",
   "version": "1.0.0",
   "description": "Brief, clear description of what the plugin does",
-  "author": "Your Name or Organization"
+  "author": {
+    "name": "Your Name or Organization"
+  }
 }
 ```
 
@@ -48,7 +50,11 @@ The manifest must include these required fields:
   "name": "plugin-name",
   "version": "1.0.0",
   "description": "Plugin description",
-  "author": "Your Name",
+  "author": {
+    "name": "Your Name",
+    "email": "you@example.com",
+    "url": "https://yoursite.com"
+  },
   "repository": "https://github.com/username/plugin-repo",
   "license": "MIT",
   "keywords": ["formatting", "code-quality"],

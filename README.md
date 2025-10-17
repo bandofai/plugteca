@@ -32,7 +32,7 @@ Once you've added the marketplace, install any plugin with:
 
 Example:
 ```bash
-/plugin install example-formatter@plugteca
+/plugin install essentials@plugteca
 ```
 
 ### List Available Plugins
@@ -87,7 +87,9 @@ Each plugin must have a `plugin.json` manifest:
   "name": "plugin-name",
   "version": "1.0.0",
   "description": "Brief description of the plugin",
-  "author": "Your Name"
+  "author": {
+    "name": "Your Name"
+  }
 }
 ```
 
