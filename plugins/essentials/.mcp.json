@@ -21,11 +21,11 @@
     ],
     "description": "Up-to-date code documentation and examples from current sources"
   },
-  "sequential-thinking": {
+  "mcp-sequentialthinking-tools": {
     "command": "npx",
     "args": [
       "-y",
-      "@modelcontextprotocol/server-sequential-thinking"
+      "mcp-sequentialthinking-tools"
     ],
     "description": "Structured, step-by-step problem-solving and reasoning"
   }

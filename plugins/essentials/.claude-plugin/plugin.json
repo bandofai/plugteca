@@ -5,6 +5,6 @@
   "author": {
     "name": "bandofai"
   },
-  "keywords": ["mcp", "serena", "context7", "sequential-thinking", "requirements", "brainstorming", "implementation", "code-navigation", "documentation", "reasoning"],
+  "keywords": ["mcp", "serena", "context7", "mcp-sequentialthinking-tools", "requirements", "brainstorming", "implementation", "code-navigation", "documentation", "reasoning"],
   "license": "MIT"
 }
