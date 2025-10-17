@@ -5,9 +5,19 @@
   },
   "plugins": [
     {
+      "name": "chrome-devtools",
+      "source": "./plugins/chrome-devtools",
+      "description": "Control and inspect Chrome browsers with full DevTools automation, debugging, and performance analysis"
+    },
+    {
       "name": "essentials",
       "source": "./plugins/essentials",
-      "description": "Essential MCP servers: Serena for semantic code navigation, Context7 for up-to-date documentation, and Sequential Thinking for structured reasoning"
+      "description": "Essential MCP servers and requirements management commands for enhanced Claude Code development workflow"
+    },
+    {
+      "name": "figma",
+      "source": "./plugins/figma",
+      "description": "Generate code from Figma designs, extract components, and maintain design-code consistency"
     }
   ]
 }

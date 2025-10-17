@@ -1,6 +1,6 @@
 # Essentials Plugin
 
-A collection of essential MCP servers that enhance Claude Code with powerful semantic code navigation, up-to-date documentation, and structured reasoning capabilities.
+Essential MCP servers and requirements management commands for enhanced Claude Code development workflow.
 
 ## Installation
 
@@ -10,7 +10,9 @@ A collection of essential MCP servers that enhance Claude Code with powerful sem
 
 ## What's Included
 
-This plugin bundles three powerful MCP servers:
+### MCP Servers
+
+Three powerful MCP servers for enhanced development:
 
 ### 1. Serena - Semantic Code Navigation
 
@@ -121,6 +123,45 @@ Once installed, all three MCP servers are automatically available in Claude Code
 "Think through this refactoring step by step"
 "Analyze why this test is failing using systematic reasoning"
 "Plan the database migration carefully with all considerations"
+```
+
+### Requirements Management Commands
+
+Seven slash commands for interactive requirements management:
+
+**Core Workflow (no prefix):**
+- `/brainstorm <name>` - Create requirement through interactive Q&A
+- `/implement <name>` - Implement a requirement systematically with tests
+- `/continue [name]` - Resume interrupted implementation
+
+**Management (`/req-` prefix):**
+- `/req-list` - Show all requirements with status table
+- `/req-update <name>` - Modify existing requirement
+- `/req-tests <name>` - Generate comprehensive test scenarios
+- `/req-status [name]` - Check implementation progress vs requirements
+
+**Storage:** Creates `.requirements/` directory with individual files for each feature, allowing you to manage multiple requirements simultaneously.
+
+#### Requirements Workflow Example
+
+```bash
+# 1. Start brainstorming a feature
+/brainstorm user-authentication
+
+# 2. Implement it
+/implement user-authentication
+
+# 3. If interrupted, resume later
+/continue
+
+# 4. Generate tests
+/req-tests user-authentication
+
+# 5. Check progress
+/req-status user-authentication
+
+# 6. List all requirements
+/req-list
 ```
 
 ## Configuration
