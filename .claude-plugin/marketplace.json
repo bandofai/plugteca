@@ -1,0 +1,13 @@
+{
+  "name": "plugteca",
+  "owner": {
+    "name": "Plugteca"
+  },
+  "plugins": [
+    {
+      "name": "essentials",
+      "source": "./plugins/essentials",
+      "description": "Essential MCP servers: Serena for semantic code navigation, Context7 for up-to-date documentation, and Sequential Thinking for structured reasoning"
+    }
+  ]
+}
