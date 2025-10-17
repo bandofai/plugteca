@@ -11,17 +11,56 @@ Claude Code plugins extend Claude's capabilities with custom commands, agents, s
 
 ## Installation
 
-Add Plugteca to Claude Code:
+Plugteca supports two installation modes: **global** (available in all projects) and **local** (project-specific).
+
+### Global Installation
+
+Add Plugteca marketplace globally:
 
 ```bash
 /plugin marketplace add bandofai/plugteca
 ```
 
-Install a plugin:
+Install a plugin globally:
 
 ```bash
 /plugin install essentials@plugteca
 ```
+
+This makes the plugin available across all your projects.
+
+### Local Installation (Project-Specific)
+
+For team projects or to limit plugins to specific repositories, use local configuration:
+
+1. Create `.claude/settings.json` in your project root:
+
+```json
+{
+  "marketplaces": [
+    {
+      "name": "plugteca",
+      "url": "https://github.com/bandofai/plugteca"
+    }
+  ],
+  "plugins": [
+    {
+      "name": "essentials",
+      "marketplace": "plugteca"
+    }
+  ]
+}
+```
+
+2. Team members who "trust" this folder will automatically have these plugins installed **only for this project**.
+
+**Benefits:**
+- Project-specific plugin configuration
+- Automatic installation for team members
+- No global plugin pollution
+- Version control friendly
+
+Learn more in the [official plugin documentation](https://docs.claude.com/en/docs/claude-code/plugins).
 
 ## Available Plugins
 
