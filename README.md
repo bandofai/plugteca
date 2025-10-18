@@ -121,6 +121,34 @@ After installing, restart Claude Code to activate the MCP server.
 
 ---
 
+### Subagent Creator
+
+Expert subagent architect with comprehensive skill library for creating production-ready, skill-aware Claude Code subagents.
+
+#### Subagent
+
+- **ultimate-subagent-creator** - Master architect for designing exceptional subagents with battle-tested patterns from 500+ deployments
+
+#### Skills
+
+- **subagent-creation** - Comprehensive patterns library for agent architecture, tool selection, model choice, and workflow integration
+
+**Installation:**
+```bash
+/plugin install subagent-creator@plugteca
+```
+
+**Features:**
+- Automatic skill integration for document creators
+- Security-first design with least privilege
+- Pattern recognition for different agent types
+- Quality validation checklists
+- Workflow coordination strategies
+
+After installing, restart Claude Code to activate the subagent and skill.
+
+---
+
 ### Figma
 
 Generate code from Figma designs, extract components, variables, and maintain design-code consistency.
